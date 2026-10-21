@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brownie Bliss — freshly baked, fudgy brownies made with love. Explore our signature brownie collection.">
+  <title>Brownie Bliss | Handmade Brownies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Freshly baked happiness · Free delivery on orders over ₹999</div>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">B</span><span>Brownie <em>Bliss</em><small>BAKED WITH LOVE</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a><a href="categories.html">Our Brownies</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="Open shopping cart">Bag <span id="cartCount">0</span></button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SMALL BATCH · BIG HAPPINESS</p>
+        <h1>Life is better<br>with a little <em>brownie.</em></h1>
+        <p class="hero-text">Rich, fudgy, freshly baked brownies made for your sweetest moments. One bite, and you’ll know.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="categories.html">Explore brownies <span>↗</span></a><a class="text-link" href="about.html">Our little story <span>→</span></a></div>
+        <div class="hero-note"><span class="stars">★★★★★</span><span>Loved by brownie fans, baked fresh daily</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image" role="img" aria-label="Chocolate brownies with a glossy chocolate topping"></div>
+        <div class="round-stamp"><span>MADE FRESH</span><strong>♥</strong><span>EVERY DAY</span></div>
+        <div class="image-caption"><span>01 / OUR SIGNATURE</span><strong>The Classic Fudge</strong></div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div><span class="benefit-icon">✦</span><span><strong>Freshly baked</strong><small>Made in small batches</small></span></div>
+      <div><span class="benefit-icon">♡</span><span><strong>Quality ingredients</strong><small>Thoughtfully selected</small></span></div>
+      <div><span class="benefit-icon">♧</span><span><strong>Made to delight</strong><small>Perfect for sharing</small></span></div>
+      <div><span class="benefit-icon">⌂</span><span><strong>Delivered with care</strong><small>Sweetness at your door</small></span></div>
+    </section>
+    <section class="section featured-section">
+      <div class="section-heading"><div><p class="eyebrow">THE CROWD FAVOURITES</p><h2>Brownies worth <em>falling for.</em></h2></div><a class="text-link" href="categories.html">View all brownies →</a></div>
+      <div class="product-grid" id="featuredProducts"></div>
+    </section>
+    <section class="story-banner">
+      <div class="story-photo" role="img" aria-label="Freshly baked brownies on a baking tray"></div>
+      <div class="story-copy"><p class="eyebrow">A LITTLE LOVE IN EVERY BITE</p><h2>Not just brownies.<br><em>Little moments of joy.</em></h2><p>From the crackly top to the soft, fudgy centre, every batch is made to turn an ordinary day into something special.</p><a class="btn btn-light" href="about.html">Get to know us <span>↗</span></a></div>
+    </section>
+    <section class="section category-section">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Something for every <em>craving.</em></h2></div></div>
+      <div class="category-grid">
+        <a class="category-card cat-classic" href="categories.html?type=classic"><span>01</span><div><h3>Classic & Fudgy</h3><p>Deep chocolate, pure joy</p></div><b>↗</b></a>
+        <a class="category-card cat-nutty" href="categories.html?type=nutty"><span>02</span><div><h3>Nutty & Nice</h3><p>A little crunch, a lot of love</p></div><b>↗</b></a>
+        <a class="category-card cat-special" href="categories.html?type=special"><span>03</span><div><h3>Special Treats</h3><p>For extra-sweet occasions</p></div><b>↗</b></a>
+      </div>
+    </section>
+    <section class="testimonial">
+      <p class="eyebrow">SWEET WORDS FROM YOU</p><div class="quote-stars">★★★★★</div><blockquote>“That perfect crackly top and gooey centre. It genuinely feels like a little celebration in every bite!”</blockquote><p class="quote-author">— A HAPPY BROWNIE LOVER</p>
+    </section>
+    <section class="newsletter section"><div><p class="eyebrow">A LITTLE SOMETHING SWEET</p><h2>Good things come to <em>your inbox.</em></h2><p>Get brownie news, seasonal specials and sweet surprises.</p></div><form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="newsletterEmail">Email address</label><input id="newsletterEmail" type="email" placeholder="Your email address" required><button class="btn btn-dark" type="submit">Count me in ↗</button><small id="newsletterMessage" aria-live="polite"></small></form></section>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><div><a class="logo logo-footer" href="index.html"><span class="logo-mark">B</span><span>Brownie <em>Bliss</em><small>BAKED WITH LOVE</small></span></a><p>Small-batch brownies for life’s<br>big and little celebrations.</p></div><div><h4>EXPLORE</h4><a href="categories.html">Our brownies</a><a href="about.html">Our story</a><a href="contact.html">Contact us</a></div><div><h4>WE’RE HERE</h4><p>Mon–Sat · 10 AM–7 PM</p><p>hello@browniebliss.example</p><p>Chennai, Tamil Nadu</p></div><div><h4>FOLLOW THE CRUMBS</h4><p>Instagram · Pinterest · Facebook</p><p class="footer-note">Made with love, served with joy.</p></div></div><div class="footer-bottom"><span>© <span id="year"></span> Brownie Bliss. Demo website.</span><span>Freshly baked. Always lovely.</span></div></footer>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true"><div class="cart-header"><h2>Your brownie bag</h2><button id="closeCart" aria-label="Close cart">✕</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is waiting for something sweet.</p></div><div class="cart-bottom"><div class="cart-total"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p class="cart-disclaimer">Demo checkout — no real payment is processed.</p><button class="btn btn-dark full-width" id="checkoutButton">Continue to checkout ↗</button></div></aside><div class="overlay" id="overlay"></div>
+</body></html>
